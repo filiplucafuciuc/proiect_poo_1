@@ -14,7 +14,7 @@ void ActivitateCulturala::afiseaza() const {
 std::string ActivitateCulturala::getTip() const {
     return "cultural";
 }
-std::string ActivitateCulturala::getFunFact() const {
+const std::string ActivitateCulturala::getFunFact() const {
     return funFact;
 }
 

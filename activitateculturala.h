@@ -13,7 +13,7 @@ public:
 
     void afiseaza() const override;
     std::string getTip() const override;
-    std::string getFunFact() const;
+    const std::string getFunFact() const;
 
     void executaActivitate(double& buget, int& energie) override;
 };

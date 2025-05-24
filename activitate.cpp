@@ -31,10 +31,10 @@ int Activitate::getNrActivitati() {
 int Activitate::getX() const { return coordonate.getFirst(); }
 int Activitate::getY() const { return coordonate.getSecond(); }
 
-double Activitate::getCost() const { return cost; }
-int Activitate::getEnergie() const { return energie; }
-void Activitate::setCost(double c) { cost = c; }
-void Activitate::setEnergie(int e) { energie = e; }
+// double Activitate::getCost() const { return cost; }
+// int Activitate::getEnergie() const { return energie; }
+// void Activitate::setCost(double c) { cost = c; }
+// void Activitate::setEnergie(int e) { energie = e; }
 
 std::ostream& operator<<(std::ostream& os, const Activitate& act) {
     os << "[" << act.ora << "] " << act.nume << " la " << act.locatie << " " << act.coordonate;
