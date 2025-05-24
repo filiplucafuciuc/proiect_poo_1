@@ -18,7 +18,7 @@ const std::string& ActivitateCulturala::getFunFact() const {
     return funFact;
 }
 
-void ActivitateCulturala::executaActivitate(double& buget, int& energie) {
+void ActivitateCulturala::executaActivitate(double& buget, int& energieCurenta) {
     std::cout << "\nActivitate Culturala: " << obiectiv << "\n\n";
     std::cout << "Stiati ca: " << getFunFact() << "\n\n";
     std::cout << "Alege modul de vizitare pentru aceasta experienta culturala:\n";
@@ -55,11 +55,11 @@ void ActivitateCulturala::executaActivitate(double& buget, int& energie) {
             OptiuneVizitare o = optiuni[alegere - 1];
             if (buget >= o.cost) {
                 buget -= o.cost;
-                energie += o.energieModificata;
-                if(energie>100)
-                    energie = 100;
+                energieCurenta += o.energieModificata;
+                if(energieCurenta>100)
+                    energieCurenta = 100;
                 std::cout << "Ai ales: " << o.nume << ". Buget ramas: " << buget
-                          << " lei | Energie actuala: " << energie << "\n";
+                          << " lei | Energie actuala: " << energieCurenta << "\n";
                 return;
             } else {
                 std::cout << "Nu ai suficienti bani pentru aceasta optiune.\n";

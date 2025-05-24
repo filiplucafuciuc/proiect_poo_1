@@ -12,7 +12,7 @@ std::string ActivitateGastronomica::getTip() const {
     return "gastronomic";
 }
 
-void ActivitateGastronomica::executaActivitate(double& buget, int& energie) {
+void ActivitateGastronomica::executaActivitate(double& buget, int& energieCurenta) {
     std::cout << "Ai ales o activitate gastronomica (" << tipBucatarie << ").\n";
 
     const double costuri[] = {10, 25, 50};
@@ -40,7 +40,7 @@ void ActivitateGastronomica::executaActivitate(double& buget, int& energie) {
         }
 
         double costAles = costuri[optiune - 1];
-        int energieAlesa = energii[optiune - 1];
+        int energieAleasa = energii[optiune - 1];
 
         if (buget < costAles) {
             std::cout << "Nu ai suficienti bani pentru acest meniu.\n";
@@ -55,13 +55,13 @@ void ActivitateGastronomica::executaActivitate(double& buget, int& energie) {
         }
 
         cost = costAles;
-        energie += energieAlesa;
+        energieCurenta += energieAleasa;
         buget -= cost;
-        if(energie > 100)
-            energie = 100;
+        if(energieCurenta > 100)
+            energieCurenta = 100;
 
-        std::cout << "Ai platit " << cost << " lei si ai castigat " << energie << " energie.\n";
-        std::cout << "Buget ramas: " << buget << " | Energie curenta: " << energie << "\n";
+        std::cout << "Ai platit " << cost << " lei si ai castigat " << energieAleasa << " energie.\n";
+        std::cout << "Buget ramas: " << buget << " | Energie curenta: " << energieCurenta << "\n";
         break;
     }
 }
