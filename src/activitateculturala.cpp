@@ -38,7 +38,7 @@ void ActivitateCulturala::executaActivitate(double& buget, int& energie) {
     for (size_t i = 0; i < optiuni.size(); ++i) {
         std::cout << i + 1 << ". " << optiuni[i].nume
                   << " | Cost: " << optiuni[i].cost
-                  << " lei | Energie + " << optiuni[i].energieModificata << "\n";
+                  << " lei | Energie " << optiuni[i].energieModificata << "\n";
     }
 
     int alegere;

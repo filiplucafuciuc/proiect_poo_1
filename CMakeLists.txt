@@ -132,17 +132,7 @@ FetchContent_MakeAvailable(googletest)
 # NOTE: update executable name in .github/workflows/cmake.yml:25 when changing name here
 #add_executable(${MAIN_EXECUTABLE_NAME} main.cpp ${SOURCES}
 #        activitategastronomica.cpp
-#        activitate.cpp
-#        activitatedivertisment.cpp
-#        activitateculturala.cpp
-#        oras.cpp
-#        itinerar.cpp
-#        activitatefactory.cpp
-#        rulare.cpp
-#        include/activitate.h
-#        include/activitate.h
-#        include/activitateculturala.h
-#        #test/example/example_test.cpp
+#
 #)
 add_executable(${MAIN_EXECUTABLE_NAME} ${SOURCES}
         src/activitate.cpp)
