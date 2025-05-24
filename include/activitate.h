@@ -36,6 +36,9 @@ public:
     virtual std::string getTip() const = 0;
 
     friend std::ostream& operator<<(std::ostream& os, const Activitate& act);
+
+    virtual std::string getSuvenir() const { return ""; }
+    virtual std::string getNume() const { return nume; }
 };
 
 

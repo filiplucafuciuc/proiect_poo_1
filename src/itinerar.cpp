@@ -216,3 +216,12 @@ void Itinerar::alegeActivitatePentruOra(
 // const std::vector<std::shared_ptr<Activitate>>& Itinerar::getActivitati() const {
 //     return activitati;
 // }
+
+void Itinerar::afiseazaSuveniruri() const {
+    std::cout << "\n--- Suvenirurile tale ---\n";
+    for (const auto& act : activitati) {
+        if (act->getSuvenir() != "") {
+            std::cout << "- " << act->getSuvenir() << " de la activitatea \"" << act->getNume() << "\"\n";
+        }
+    }
+}

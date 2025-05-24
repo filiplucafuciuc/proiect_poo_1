@@ -185,17 +185,17 @@ oraseActivitati["Iasi"].adaugaActivitate(23, ActivitateFactory::creeazaActivitat
 
 
 
-    oraseActivitati["Bucuresti"].adaugaActivitate(8, ActivitateFactory::creeazaActivitate(
+oraseActivitati["Bucuresti"].adaugaActivitate(8, ActivitateFactory::creeazaActivitate(
     "gastronomic", "Mic dejun la French Bakery", "8:00", "French Bakery", 10, 20, "frantuzeasca"));
 oraseActivitati["Bucuresti"].adaugaActivitate(8, ActivitateFactory::creeazaActivitate(
     "gastronomic", "Cafea la Origo", "8:00", "Origo", 15, 25, "specialty coffee"));
 
-    oraseActivitati["Bucuresti"].adaugaActivitate(8, ActivitateFactory::creeazaActivitate(
-    "cultural", "Vizită la Muzeul Național de Artă", "08:00", "Calea Victoriei 49-53", 55, 28, "muzeu",
-    "Muzeul Național de Artă din București adăpostește colecții valoroase de artă românească și europeană."));
-    oraseActivitati["Bucuresti"].adaugaActivitate(8, ActivitateFactory::creeazaActivitate(
-        "cultural", "Tur ghidat în Centrul Vechi", "08:00", "Centrul Istoric", 42, 14, "istoric",
-        "Un ghid specializat le prezintă turiștilor clădirile vechi și poveștile Bucureștiului de odinioară."));
+oraseActivitati["Bucuresti"].adaugaActivitate(8, ActivitateFactory::creeazaActivitate(
+    "cultural", "Vizita la Muzeul National de Arta", "08:00", "Calea Victoriei 49-53", 55, 28, "muzeu",
+    "Muzeul National de Arta din Bucuresti adaposteste colectii valoroase de arta romaneasca si europeana."));
+oraseActivitati["Bucuresti"].adaugaActivitate(8, ActivitateFactory::creeazaActivitate(
+    "cultural", "Tur ghidat in Centrul Vechi", "08:00", "Centrul Istoric", 42, 14, "istoric",
+    "Un ghid specializat le prezinta turistilor cladirile vechi si povestile Bucurestiului de odinioara."));
 
 oraseActivitati["Bucuresti"].adaugaActivitate(8, ActivitateFactory::creeazaActivitate(
     "divertisment", "Jogging in Parcul Herastrau", "8:00", "Parcul Herastrau", 30, 40, "sport"));
@@ -207,80 +207,80 @@ oraseActivitati["Bucuresti"].adaugaActivitate(9, ActivitateFactory::creeazaActiv
 oraseActivitati["Bucuresti"].adaugaActivitate(9, ActivitateFactory::creeazaActivitate(
     "gastronomic", "Mic dejun traditional la Lacrimi si Sfinti", "9:00", "Lacrimi si Sfinti", 14, 38, "romaneasca"));
 
-    oraseActivitati["Bucuresti"].adaugaActivitate(9, ActivitateFactory::creeazaActivitate(
-    "cultural", "Vizită la Patriarhia Română", "09:00", "Dealul Mitropoliei", 64, 33, "religios",
-    "Pelerinii urcă Dealul Mitropoliei pentru a vizita sediul Bisericii Ortodoxe Române."));
-    oraseActivitati["Bucuresti"].adaugaActivitate(9, ActivitateFactory::creeazaActivitate(
-        "cultural", "Lectură la Librăria Cărturești", "09:00", "Str. Verona", 25, 45, "literatura",
-        "Librăria Cărturești găzduiește sesiuni matinale de lectură pentru pasionații de literatură."));
+oraseActivitati["Bucuresti"].adaugaActivitate(9, ActivitateFactory::creeazaActivitate(
+    "cultural", "Vizita la Patriarhia Romana", "09:00", "Dealul Mitropoliei", 64, 33, "religios",
+    "Pelerinii urca Dealul Mitropoliei pentru a vizita sediul Bisericii Ortodoxe Romane."));
+oraseActivitati["Bucuresti"].adaugaActivitate(9, ActivitateFactory::creeazaActivitate(
+    "cultural", "Lectura la Libraria Carturesti", "09:00", "Str. Verona", 25, 45, "literatura",
+    "Libraria Carturesti gazduieste sesiuni matinale de lectura pentru pasionatii de literatura."));
 
 oraseActivitati["Bucuresti"].adaugaActivitate(9, ActivitateFactory::creeazaActivitate(
     "divertisment", "Escape Room – Trapped", "9:00", "Trapped Escape Room", 21, 49, "aventura"));
 oraseActivitati["Bucuresti"].adaugaActivitate(9, ActivitateFactory::creeazaActivitate(
     "divertisment", "Bowling la Mega Mall", "9:00", "Mega Mall", 23, 50, "recreatie"));
 
-    oraseActivitati["Bucuresti"].adaugaActivitate(11, ActivitateFactory::creeazaActivitate(
-        "gastronomic", "Pranz la Caru' cu Bere", "11:00", "Caru' cu Bere", 26, 51, "romaneasca"));
 oraseActivitati["Bucuresti"].adaugaActivitate(11, ActivitateFactory::creeazaActivitate(
-        "gastronomic", "Pizza la Pizzamania", "11:00", "Pizzamania", 28, 53, "italiana"));
-
-    oraseActivitati["Bucuresti"].adaugaActivitate(11, ActivitateFactory::creeazaActivitate(
-    "cultural", "Vizită la Muzeul Satului", "11:00", "Șos. Kiseleff 28-30", 70, 19, "muzeu",
-    "Vizitatorii descoperă arhitectura tradițională românească într-un cadru natural autentic."));
-    oraseActivitati["Bucuresti"].adaugaActivitate(11, ActivitateFactory::creeazaActivitate(
-        "cultural", "Plimbare prin Curtea Veche", "11:00", "Str. Franceză", 36, 39, "istoric",
-        "Curtea Veche le oferă turiștilor o incursiune în istoria voievodală a orașului."));
+    "gastronomic", "Pranz la Caru' cu Bere", "11:00", "Caru' cu Bere", 26, 51, "romaneasca"));
+oraseActivitati["Bucuresti"].adaugaActivitate(11, ActivitateFactory::creeazaActivitate(
+    "gastronomic", "Pizza la Pizzamania", "11:00", "Pizzamania", 28, 53, "italiana"));
 
 oraseActivitati["Bucuresti"].adaugaActivitate(11, ActivitateFactory::creeazaActivitate(
-        "divertisment", "Teren de tenis la Dinamo", "11:00", "Club Dinamo", 34, 59, "sport"));
+    "cultural", "Vizita la Muzeul Satului", "11:00", "Sos. Kiseleff 28-30", 70, 19, "muzeu",
+    "Vizitatorii descopera arhitectura traditionala romaneasca intr-un cadru natural autentic."));
 oraseActivitati["Bucuresti"].adaugaActivitate(11, ActivitateFactory::creeazaActivitate(
-        "divertisment", "Film la Cinema City AFI", "11:00", "AFI Palace Cotroceni", 36, 60, "cinema"));
+    "cultural", "Plimbare prin Curtea Veche", "11:00", "Str. Franceza", 36, 39, "istoric",
+    "Curtea Veche le ofera turistilor o incursiune in istoria voievodala a orasului."));
+
+oraseActivitati["Bucuresti"].adaugaActivitate(11, ActivitateFactory::creeazaActivitate(
+    "divertisment", "Teren de tenis la Dinamo", "11:00", "Club Dinamo", 34, 59, "sport"));
+oraseActivitati["Bucuresti"].adaugaActivitate(11, ActivitateFactory::creeazaActivitate(
+    "divertisment", "Film la Cinema City AFI", "11:00", "AFI Palace Cotroceni", 36, 60, "cinema"));
 
 oraseActivitati["Bucuresti"].adaugaActivitate(13, ActivitateFactory::creeazaActivitate(
-        "gastronomic", "Burgeri la Vivo", "13:00", "Vivo Fusion Food Bar", 38, 61, "americana"));
+    "gastronomic", "Burgeri la Vivo", "13:00", "Vivo Fusion Food Bar", 38, 61, "americana"));
 oraseActivitati["Bucuresti"].adaugaActivitate(13, ActivitateFactory::creeazaActivitate(
-        "gastronomic", "Paste la Trattoria Il Calcio", "13:00", "Il Calcio", 40, 62, "italiana"));
-
-    oraseActivitati["Bucuresti"].adaugaActivitate(13, ActivitateFactory::creeazaActivitate(
-    "cultural", "Lectură în Parcul Cișmigiu", "13:00", "Parcul Cișmigiu", 18, 27, "literatura",
-    "Bucureștenii se adună în Parcul Cișmigiu pentru a participa la o sesiune colectivă de lectură."));
-    oraseActivitati["Bucuresti"].adaugaActivitate(13, ActivitateFactory::creeazaActivitate(
-        "cultural", "Vizită la Biserica Stavropoleos", "13:00", "Str. Stavropoleos", 44, 15, "religios",
-        "Biserica Stavropoleos impresionează vizitatorii prin arhitectura sa brâncovenească și atmosfera pașnică."));
+    "gastronomic", "Paste la Trattoria Il Calcio", "13:00", "Il Calcio", 40, 62, "italiana"));
 
 oraseActivitati["Bucuresti"].adaugaActivitate(13, ActivitateFactory::creeazaActivitate(
-        "divertisment", "Laser Tag la Laser Maxx", "13:00", "Laser Maxx", 46, 67, "adrenalina"));
+    "cultural", "Lectura in Parcul Cismigiu", "13:00", "Parcul Cismigiu", 18, 27, "literatura",
+    "Bucurestenii se aduna in Parcul Cismigiu pentru a participa la o sesiune colectiva de lectura."));
 oraseActivitati["Bucuresti"].adaugaActivitate(13, ActivitateFactory::creeazaActivitate(
-        "divertisment", "Karaoke in Old City", "13:00", "Old City", 48, 68, "muzica"));
+    "cultural", "Vizita la Biserica Stavropoleos", "13:00", "Str. Stavropoleos", 44, 15, "religios",
+    "Biserica Stavropoleos impresioneaza vizitatorii prin arhitectura sa brancoveneasca si atmosfera pasnica."));
+
+oraseActivitati["Bucuresti"].adaugaActivitate(13, ActivitateFactory::creeazaActivitate(
+    "divertisment", "Laser Tag la Laser Maxx", "13:00", "Laser Maxx", 46, 67, "adrenalina"));
+oraseActivitati["Bucuresti"].adaugaActivitate(13, ActivitateFactory::creeazaActivitate(
+    "divertisment", "Karaoke in Old City", "13:00", "Old City", 48, 68, "muzica"));
 
 oraseActivitati["Bucuresti"].adaugaActivitate(15, ActivitateFactory::creeazaActivitate(
-        "gastronomic", "Gogosi la Donuterie", "15:00", "Donuterie Bucuresti", 50, 70, "deserturi"));
+    "gastronomic", "Gogosi la Donuterie", "15:00", "Donuterie Bucuresti", 50, 70, "deserturi"));
 oraseActivitati["Bucuresti"].adaugaActivitate(15, ActivitateFactory::creeazaActivitate(
-        "gastronomic", "Cafea la Origo", "15:00", "Origo", 52, 71, "cafenea"));
-
-    oraseActivitati["Bucuresti"].adaugaActivitate(15, ActivitateFactory::creeazaActivitate(
-    "cultural", "Vizită la Muzeul George Enescu", "15:00", "Calea Victoriei 141", 58, 21, "muzeu",
-    "Muzeul îl comemorează pe compozitorul George Enescu prin exponate și înregistrări rare."));
-    oraseActivitati["Bucuresti"].adaugaActivitate(15, ActivitateFactory::creeazaActivitate(
-        "cultural", "Tur istoric la Palatul Regal", "15:00", "Calea Victoriei", 27, 36, "istoric",
-        "Un ghid prezintă istoria Palatului Regal și rolul său în viața politică a țării."));
+    "gastronomic", "Cafea la Origo", "15:00", "Origo", 52, 71, "cafenea"));
 
 oraseActivitati["Bucuresti"].adaugaActivitate(15, ActivitateFactory::creeazaActivitate(
-        "divertisment", "Patinaj la Cismigiu", "15:00", "Parcul Cismigiu", 58, 77, "outdoor"));
+    "cultural", "Vizita la Muzeul George Enescu", "15:00", "Calea Victoriei 141", 58, 21, "muzeu",
+    "Muzeul il comemoreaza pe compozitorul George Enescu prin exponate si inregistrari rare."));
 oraseActivitati["Bucuresti"].adaugaActivitate(15, ActivitateFactory::creeazaActivitate(
-        "divertisment", "Jocuri la Vortex VR Arena", "15:00", "Vortex VR", 60, 78, "virtual reality"));
+    "cultural", "Tur istoric la Palatul Regal", "15:00", "Calea Victoriei", 27, 36, "istoric",
+    "Un ghid prezinta istoria Palatului Regal si rolul sau in viata politica a tarii."));
+
+oraseActivitati["Bucuresti"].adaugaActivitate(15, ActivitateFactory::creeazaActivitate(
+    "divertisment", "Patinaj la Cismigiu", "15:00", "Parcul Cismigiu", 58, 77, "outdoor"));
+oraseActivitati["Bucuresti"].adaugaActivitate(15, ActivitateFactory::creeazaActivitate(
+    "divertisment", "Jocuri la Vortex VR Arena", "15:00", "Vortex VR", 60, 78, "virtual reality"));
 
 oraseActivitati["Bucuresti"].adaugaActivitate(16, ActivitateFactory::creeazaActivitate(
         "gastronomic", "Ceai la Bernschutz", "16:00", "Bernschutz & Co.", 62, 80, "ceainarie"));
 oraseActivitati["Bucuresti"].adaugaActivitate(16, ActivitateFactory::creeazaActivitate(
         "gastronomic", "Prajituri la French Revolution", "16:00", "French Revolution", 64, 82, "frantuzeasca"));
 
-    oraseActivitati["Bucuresti"].adaugaActivitate(16, ActivitateFactory::creeazaActivitate(
-    "cultural", "Rugăciune de după-amiază la Biserica Sf. Spiridon", "16:00", "Calea Șerban Vodă", 47, 12, "religios",
-    "Credincioșii se adună la Biserica Sf. Spiridon pentru rugăciunea de după-amiază."));
-    oraseActivitati["Bucuresti"].adaugaActivitate(16, ActivitateFactory::creeazaActivitate(
-        "cultural", "Lectură de după-amiază la Biblioteca Națională", "16:00", "Bd. Unirii", 33, 46, "literatura",
-        "Biblioteca Națională organizează o lectură publică cu autori contemporani."));
+oraseActivitati["Bucuresti"].adaugaActivitate(16, ActivitateFactory::creeazaActivitate(
+    "cultural", "Rugaciune de dupa-amiaza la Biserica Sf. Spiridon", "16:00", "Calea Serban Voda", 47, 12, "religios",
+    "Credinciosii se aduna la Biserica Sf. Spiridon pentru rugaciunea de dupa-amiaza."));
+oraseActivitati["Bucuresti"].adaugaActivitate(16, ActivitateFactory::creeazaActivitate(
+        "cultural", "Lectura de dupa-amiaza la Biblioteca Nationala", "16:00", "Bd. Unirii", 33, 46, "literatura",
+        "Biblioteca Nationala organizeaza o lectura publica cu autori contemporani."));
 
 oraseActivitati["Bucuresti"].adaugaActivitate(16, ActivitateFactory::creeazaActivitate(
         "divertisment", "Mini golf la Funland", "16:00", "Funland Bucuresti", 70, 87, "relaxare"));
@@ -292,12 +292,12 @@ oraseActivitati["Bucuresti"].adaugaActivitate(17, ActivitateFactory::creeazaActi
 oraseActivitati["Bucuresti"].adaugaActivitate(17, ActivitateFactory::creeazaActivitate(
         "gastronomic", "Shaorma la Dristor Kebap", "17:00", "Dristor Kebap", 76, 91, "orientala"));
 
-    oraseActivitati["Bucuresti"].adaugaActivitate(17, ActivitateFactory::creeazaActivitate(
-    "cultural", "Vizită la Muzeul Colecțiilor de Artă", "17:00", "Calea Victoriei 111", 68, 43, "muzeu",
-    "Vizitatorii pot admira colecții private valoroase donate statului român de-a lungul timpului."));
-    oraseActivitati["Bucuresti"].adaugaActivitate(17, ActivitateFactory::creeazaActivitate(
-        "cultural", "Tur pietonal prin Cartierul Armenesc", "17:00", "Str. Armenească", 49, 17, "istoric",
-        "Un ghid local le povestește participanților istoria comunității armene din București."));
+oraseActivitati["Bucuresti"].adaugaActivitate(17, ActivitateFactory::creeazaActivitate(
+    "cultural", "Vizita la Muzeul Colectiilor de Arta", "17:00", "Calea Victoriei 111", 68, 43, "muzeu",
+    "Vizitatorii pot admira colectii private valoroase donate statului roman de-a lungul timpului."));
+oraseActivitati["Bucuresti"].adaugaActivitate(17, ActivitateFactory::creeazaActivitate(
+        "cultural", "Tur pietonal prin Cartierul Armenesc", "17:00", "Str. Armenesca", 49, 17, "istoric",
+        "Un ghid local le povesteste participantilor istoria comunitatii armene din Bucuresti."));
 
 oraseActivitati["Bucuresti"].adaugaActivitate(17, ActivitateFactory::creeazaActivitate(
         "divertisment", "Concert in Control Club", "17:00", "Control Club", 82, 96, "muzica live"));
@@ -309,12 +309,12 @@ oraseActivitati["Bucuresti"].adaugaActivitate(19, ActivitateFactory::creeazaActi
 oraseActivitati["Bucuresti"].adaugaActivitate(19, ActivitateFactory::creeazaActivitate(
         "gastronomic", "Tapas la Pata Negra", "19:00", "Pata Negra", 88, 99, "spaniola"));
 
-    oraseActivitati["Bucuresti"].adaugaActivitate(19, ActivitateFactory::creeazaActivitate(
-    "cultural", "Lectură de seară la Librăria Humanitas", "19:00", "Piața Romană", 76, 29, "literatura",
-    "Scriitori invitați citesc fragmente din cele mai recente volume în fața publicului."));
-    oraseActivitati["Bucuresti"].adaugaActivitate(19, ActivitateFactory::creeazaActivitate(
-        "cultural", "Vizită la Mănăstirea Radu Vodă", "19:00", "Splaiul Independenței", 52, 35, "religios",
-        "Mănăstirea Radu Vodă îi primește pe vizitatori cu liniște, istorie și o panoramă deosebită asupra orașului."));
+oraseActivitati["Bucuresti"].adaugaActivitate(19, ActivitateFactory::creeazaActivitate(
+    "cultural", "Lectura de seara la Libraria Humanitas", "19:00", "Piata Romana", 76, 29, "literatura",
+    "Scriitori invitati citesc fragmente din cele mai recente volume in fata publicului."));
+oraseActivitati["Bucuresti"].adaugaActivitate(19, ActivitateFactory::creeazaActivitate(
+        "cultural", "Vizita la Manastirea Radu Voda", "19:00", "Splaiul Independentei", 52, 35, "religios",
+        "Manastirea Radu Voda ii primeste pe vizitatori cu liniste, istorie si o panorama deosebita asupra orasului."));
 
 oraseActivitati["Bucuresti"].adaugaActivitate(19, ActivitateFactory::creeazaActivitate(
         "divertisment", "Quiz Night la Energiea", "19:00", "Energiea", 94, 84, "interactiv"));
@@ -326,12 +326,12 @@ oraseActivitati["Bucuresti"].adaugaActivitate(21, ActivitateFactory::creeazaActi
 oraseActivitati["Bucuresti"].adaugaActivitate(21, ActivitateFactory::creeazaActivitate(
         "gastronomic", "Desert la Chocolat", "21:00", "Chocolat", 99, 78, "patiserie"));
 
-    oraseActivitati["Bucuresti"].adaugaActivitate(21, ActivitateFactory::creeazaActivitate(
-    "cultural", "Tur nocturn la Palatul Parlamentului", "21:00", "Bd. Națiunile Unite", 59, 50, "istoric",
-    "Participanții vizitează Palatul Parlamentului și află detalii despre cea mai mare clădire administrativă din Europa."));
-    oraseActivitati["Bucuresti"].adaugaActivitate(21, ActivitateFactory::creeazaActivitate(
-        "cultural", "Rugăciune de seară la Catedrala Mântuirii Neamului", "21:00", "Dealul Arsenalului", 72, 31, "religios",
-        "Catedrala Mântuirii Neamului oferă un spațiu imens de liniște și reculegere pentru rugăciunea de seară."));
+oraseActivitati["Bucuresti"].adaugaActivitate(21, ActivitateFactory::creeazaActivitate(
+    "cultural", "Tur nocturn la Palatul Parlamentului", "21:00", "Bd. Natiunile Unite", 59, 50, "istoric",
+    "Participantii viziteaza Palatul Parlamentului si afla detalii despre cea mai mare cladire administrativa din Europa."));
+oraseActivitati["Bucuresti"].adaugaActivitate(21, ActivitateFactory::creeazaActivitate(
+        "cultural", "Rugaciune de seara la Catedrala Mantuirii Neamului", "21:00", "Dealul Arsenalului", 72, 31, "religios",
+        "Catedrala Mantuirii Neamului ofera un spatiu imens de liniste si reculegere pentru rugaciunea de seara."));
 
 oraseActivitati["Bucuresti"].adaugaActivitate(21, ActivitateFactory::creeazaActivitate(
         "divertisment", "Escape Room – Locked In", "21:00", "Locked In", 93, 72, "aventura"));
@@ -343,12 +343,12 @@ oraseActivitati["Bucuresti"].adaugaActivitate(23, ActivitateFactory::creeazaActi
 oraseActivitati["Bucuresti"].adaugaActivitate(23, ActivitateFactory::creeazaActivitate(
         "gastronomic", "Sandvisuri la M60", "23:00", "M60", 87, 66, "modern"));
 
-    oraseActivitati["Bucuresti"].adaugaActivitate(23, ActivitateFactory::creeazaActivitate(
-    "cultural", "Noaptea Muzeelor la Muzeul Antipa", "23:00", "Șos. Kiseleff 1", 88, 19, "muzeu",
-    "Muzeul Antipa își deschide porțile pentru vizitatori nocturni care explorează exponatele științifice într-o atmosferă specială."));
-    oraseActivitati["Bucuresti"].adaugaActivitate(23, ActivitateFactory::creeazaActivitate(
-        "cultural", "Lectură nocturnă la Biblioteca Metropolitană", "23:00", "Str. Tache Ionescu", 29, 22, "literatura",
-        "Biblioteca Metropolitană găzduiește o sesiune specială de lectură nocturnă pentru iubitorii de carte."));
+oraseActivitati["Bucuresti"].adaugaActivitate(23, ActivitateFactory::creeazaActivitate(
+    "cultural", "Noaptea Muzeelor la Muzeul Antipa", "23:00", "Sos. Kiseleff 1", 88, 19, "muzeu",
+    "Muzeul Antipa isi deschide portile pentru vizitatori nocturni care exploreaza exponatele stiintifice intr-o atmosfera speciala."));
+oraseActivitati["Bucuresti"].adaugaActivitate(23, ActivitateFactory::creeazaActivitate(
+        "cultural", "Lectura nocturna la Biblioteca Metropolitana", "23:00", "Str. Tache Ionescu", 29, 22, "literatura",
+        "Biblioteca Metropolitana gazduieste o sesiune speciala de lectura nocturna pentru iubitorii de carte."));
 oraseActivitati["Bucuresti"].adaugaActivitate(23, ActivitateFactory::creeazaActivitate(
         "divertisment", "Seara de stand-up la Comics Club", "23:00", "Comics Club", 81, 60, "umor"));
 oraseActivitati["Bucuresti"].adaugaActivitate(23, ActivitateFactory::creeazaActivitate(
@@ -365,12 +365,12 @@ oraseActivitati["Cluj"].adaugaActivitate(8, ActivitateFactory::creeazaActivitate
 oraseActivitati["Cluj"].adaugaActivitate(8, ActivitateFactory::creeazaActivitate(
     "gastronomic", "Cafea la Olivo", "8:00", "Olivo Caffe", 11, 12, "cafenea"));
 
-    oraseActivitati["Cluj"].adaugaActivitate(8, ActivitateFactory::creeazaActivitate(
+oraseActivitati["Cluj"].adaugaActivitate(8, ActivitateFactory::creeazaActivitate(
     "cultural", "Vizita la Muzeul de Arta Cluj", "08:00", "Piata Unirii nr. 30", 74, 18, "muzeu",
-    "Palatul Banffy găzduiește Muzeul de Artă din Cluj, care expune lucrări valoroase de artă românească și europeană."));
-    oraseActivitati["Cluj"].adaugaActivitate(8, ActivitateFactory::creeazaActivitate(
-        "cultural", "Vizita la Bastionul Croitorilor", "08:00", "Str. Baba Novac", 52, 36, "istoric",
-        "Bastionul Croitorilor face parte din fosta cetate medievală a Clujului și a fost restaurat pentru vizitatori."));
+    "Palatul Banffy gazduieste Muzeul de Arta din Cluj, care expune lucrari valoroase de arta romaneasca si europeana."));
+oraseActivitati["Cluj"].adaugaActivitate(8, ActivitateFactory::creeazaActivitate(
+    "cultural", "Vizita la Bastionul Croitorilor", "08:00", "Str. Baba Novac", 52, 36, "istoric",
+    "Bastionul Croitorilor face parte din fosta cetate medievala a Clujului si a fost restaurat pentru vizitatori."));
 
 oraseActivitati["Cluj"].adaugaActivitate(8, ActivitateFactory::creeazaActivitate(
     "divertisment", "Jogging in Parcul Central", "8:00", "Parcul Central", 14, 18, "outdoor"));
@@ -382,12 +382,12 @@ oraseActivitati["Cluj"].adaugaActivitate(9, ActivitateFactory::creeazaActivitate
 oraseActivitati["Cluj"].adaugaActivitate(9, ActivitateFactory::creeazaActivitate(
     "gastronomic", "Mic dejun la Nuka Bistro", "9:00", "Nuka Bistro", 17, 24, "fusion"));
 
-    oraseActivitati["Cluj"].adaugaActivitate(9, ActivitateFactory::creeazaActivitate(
+oraseActivitati["Cluj"].adaugaActivitate(9, ActivitateFactory::creeazaActivitate(
     "cultural", "Lectura matinala la Book Corner", "09:00", "Bd. Eroilor", 43, 20, "literatura",
-    "Librăria Book Corner organizează sesiuni de lectură și lansări de carte în fiecare dimineață."));
-    oraseActivitati["Cluj"].adaugaActivitate(9, ActivitateFactory::creeazaActivitate(
-        "cultural", "Vizita la Catedrala Mitropolitana", "09:00", "Piata Avram Iancu", 61, 17, "religios",
-        "Catedrala Mitropolitană din Cluj a fost construită în anii '30 și impresionează prin arhitectura sa monumentală."));
+    "Libraria Book Corner organizeaza sesiuni de lectura si lansari de carte in fiecare dimineata."));
+oraseActivitati["Cluj"].adaugaActivitate(9, ActivitateFactory::creeazaActivitate(
+    "cultural", "Vizita la Catedrala Mitropolitana", "09:00", "Piata Avram Iancu", 61, 17, "religios",
+    "Catedrala Mitropolitana din Cluj a fost construita in anii '30 si impresioneaza prin arhitectura sa monumentala."));
 
 oraseActivitati["Cluj"].adaugaActivitate(9, ActivitateFactory::creeazaActivitate(
     "divertisment", "Escape Room – The Dungeon", "9:00", "The Dungeon", 20, 30, "aventura"));
@@ -399,12 +399,12 @@ oraseActivitati["Cluj"].adaugaActivitate(11, ActivitateFactory::creeazaActivitat
 oraseActivitati["Cluj"].adaugaActivitate(11, ActivitateFactory::creeazaActivitate(
     "gastronomic", "Brunch la DOT", "11:00", "DOT Cluj", 23, 36, "brunch"));
 
-    oraseActivitati["Cluj"].adaugaActivitate(11, ActivitateFactory::creeazaActivitate(
+oraseActivitati["Cluj"].adaugaActivitate(11, ActivitateFactory::creeazaActivitate(
     "cultural", "Vizita la Muzeul Etnografic al Transilvaniei", "11:00", "Str. Memorandumului", 66, 28, "muzeu",
-    "Muzeul Etnografic prezintă tradițiile și viața rurală din Transilvania prin exponate autentice."));
-    oraseActivitati["Cluj"].adaugaActivitate(11, ActivitateFactory::creeazaActivitate(
-        "cultural", "Plimbare istorica prin centrul vechi", "11:00", "Piata Muzeului", 55, 34, "istoric",
-        "Centrul vechi al Clujului păstrează clădiri istorice care oferă o privire asupra epocii medievale."));
+    "Muzeul Etnografic prezinta traditiile si viata rurala din Transilvania prin exponate autentice."));
+oraseActivitati["Cluj"].adaugaActivitate(11, ActivitateFactory::creeazaActivitate(
+    "cultural", "Plimbare istorica prin centrul vechi", "11:00", "Piata Muzeului", 55, 34, "istoric",
+    "Centrul vechi al Clujului pastreaza cladiri istorice care ofera o privire asupra epocii medievale."));
 
 oraseActivitati["Cluj"].adaugaActivitate(11, ActivitateFactory::creeazaActivitate(
     "divertisment", "Mini Golf la Fun Park", "11:00", "Fun Park Cluj", 26, 42, "activ"));
@@ -418,10 +418,10 @@ oraseActivitati["Cluj"].adaugaActivitate(13, ActivitateFactory::creeazaActivitat
 
     oraseActivitati["Cluj"].adaugaActivitate(13, ActivitateFactory::creeazaActivitate(
     "cultural", "Vizita la Biserica Franciscana", "13:00", "Piata Muzeului", 28, 44, "religios",
-    "Biserica Franciscană a fost construită în secolul al XIV-lea și adăpostește fresce valoroase."));
+    "Biserica Franciscana a fost construita in secolul al XIV-lea si adaposteste fresce valoroase."));
     oraseActivitati["Cluj"].adaugaActivitate(13, ActivitateFactory::creeazaActivitate(
         "cultural", "Lectura in Parcul Central", "13:00", "Parcul Central Simion Barnutiu", 47, 19, "literatura",
-        "Participanții citesc în aer liber într-un parc istoric din centrul Clujului."));
+        "Participantii citesc in aer liber intr-un parc istoric din centrul Clujului."));
 
 oraseActivitati["Cluj"].adaugaActivitate(13, ActivitateFactory::creeazaActivitate(
     "divertisment", "Realitatea Virtuala la VR Center", "13:00", "VR Center Cluj", 32, 54, "tehnologie"));
@@ -435,10 +435,10 @@ oraseActivitati["Cluj"].adaugaActivitate(15, ActivitateFactory::creeazaActivitat
 
     oraseActivitati["Cluj"].adaugaActivitate(15, ActivitateFactory::creeazaActivitate(
     "cultural", "Vizita la Muzeul Farmaciei", "15:00", "Piata Unirii", 36, 11, "muzeu",
-    "Muzeul Farmaciei funcționează în prima farmacie a Clujului și prezintă instrumente medicale vechi."));
+    "Muzeul Farmaciei functioneaza in prima farmacie a Clujului si prezinta instrumente medicale vechi."));
     oraseActivitati["Cluj"].adaugaActivitate(15, ActivitateFactory::creeazaActivitate(
         "cultural", "Tur ghidat la Turnul Croitorilor", "15:00", "Str. Baba Novac", 22, 48, "istoric",
-        "Un ghid povestește istoria turnului, parte a fortificației medievale a orașului."));
+        "Un ghid povesteste istoria turnului, parte a fortificatiei medievale a orasului."));
 
 oraseActivitati["Cluj"].adaugaActivitate(15, ActivitateFactory::creeazaActivitate(
     "divertisment", "Teatru la Teatrul National", "15:00", "Teatrul National Cluj", 38, 66, "spectacol"));
@@ -452,10 +452,10 @@ oraseActivitati["Cluj"].adaugaActivitate(16, ActivitateFactory::creeazaActivitat
 
     oraseActivitati["Cluj"].adaugaActivitate(16, ActivitateFactory::creeazaActivitate(
     "cultural", "Rugaciune de dupa-amiaza la Biserica Unitariana", "16:00", "Str. 21 Decembrie 1989", 68, 25, "religios",
-    "Credincioșii se adună la Biserica Unitariană pentru rugăciunea de după-amiază."));
+    "Credinciosii se aduna la Biserica Unitariana pentru rugaciunea de dupa-amiaza."));
     oraseActivitati["Cluj"].adaugaActivitate(16, ActivitateFactory::creeazaActivitate(
         "cultural", "Lectura de dupa-amiaza la Libraria Humanitas", "16:00", "Str. Universitatii", 41, 38, "literatura",
-        "Librăria Humanitas organizează o lectură cu autori contemporani locali."));
+        "Libraria Humanitas organizeaza o lectura cu autori contemporani locali."));
 
 oraseActivitati["Cluj"].adaugaActivitate(16, ActivitateFactory::creeazaActivitate(
     "divertisment", "Biliard la BarFly", "16:00", "BarFly", 44, 78, "biliard"));
@@ -469,10 +469,10 @@ oraseActivitati["Cluj"].adaugaActivitate(17, ActivitateFactory::creeazaActivitat
 
     oraseActivitati["Cluj"].adaugaActivitate(17, ActivitateFactory::creeazaActivitate(
     "cultural", "Vizita la Muzeul Zoologic", "17:00", "Str. Clinicilor", 33, 59, "muzeu",
-    "Muzeul Zoologic expune o varietate impresionantă de specii și exemplare rare."));
+    "Muzeul Zoologic expune o varietate impresionanta de specii si exemplare rare."));
     oraseActivitati["Cluj"].adaugaActivitate(17, ActivitateFactory::creeazaActivitate(
         "cultural", "Vizita la Bastionul Tesatorilor", "17:00", "Str. Fortaretei", 62, 14, "istoric",
-        "Bastionul Țesătorilor a fost renovat și include expoziții despre istoria breslelor clujene."));
+        "Bastionul Tesatorilor a fost renovat si include expozitii despre istoria breslelor clujene."));
 
 oraseActivitati["Cluj"].adaugaActivitate(17, ActivitateFactory::creeazaActivitate(
     "divertisment", "Concurs de trivia", "17:00", "Off the Wall", 50, 90, "quiz"));
@@ -486,10 +486,10 @@ oraseActivitati["Cluj"].adaugaActivitate(19, ActivitateFactory::creeazaActivitat
 
     oraseActivitati["Cluj"].adaugaActivitate(19, ActivitateFactory::creeazaActivitate(
     "cultural", "Lectura la Casa de Cultura a Studentilor", "19:00", "Piata Lucian Blaga", 26, 43, "literatura",
-    "Casa de Cultură a Studenților găzduiește un eveniment de lectură cu tineri scriitori."));
+    "Casa de Cultura a Studentilor gazduieste un eveniment de lectura cu tineri scriitori."));
     oraseActivitati["Cluj"].adaugaActivitate(19, ActivitateFactory::creeazaActivitate(
         "cultural", "Vizita la Manastirea Nicula (prezentare video)", "19:00", "Spatiu expozitional", 19, 37, "religios",
-        "Vizitatorii pot urmări un film documentar despre istoria și icoana făcătoare de minuni de la Nicula."));
+        "Vizitatorii pot urmari un film documentar despre istoria si icoana facatoare de minuni de la Nicula."));
 
 oraseActivitati["Cluj"].adaugaActivitate(19, ActivitateFactory::creeazaActivitate(
     "divertisment", "Stand-up comedy", "19:00", "Club 99 Cluj", 56, 97, "comedy"));
@@ -503,10 +503,10 @@ oraseActivitati["Cluj"].adaugaActivitate(21, ActivitateFactory::creeazaActivitat
 
     oraseActivitati["Cluj"].adaugaActivitate(21, ActivitateFactory::creeazaActivitate(
     "cultural", "Tur nocturn la Cetatuia", "21:00", "Dealul Cetatuia", 45, 50, "istoric",
-    "Un ghid prezintă istoria Cetățuii în timp ce participanții admiră panorama orașului."));
+    "Un ghid prezintă istoria Cetatuii in timp ce participantii admira panorama orasului."));
     oraseActivitati["Cluj"].adaugaActivitate(21, ActivitateFactory::creeazaActivitate(
         "cultural", "Rugaciune de seara la Catedrala Greco-Catolica", "21:00", "Str. Motilor", 77, 32, "religios",
-        "Catedrala Greco-Catolică oferă o atmosferă liniștită pentru rugăciunea de seară."));
+        "Catedrala Greco-Catolica ofera o atmosfera linistita pentru rugaciunea de seara."));
 
 oraseActivitati["Cluj"].adaugaActivitate(21, ActivitateFactory::creeazaActivitate(
     "divertisment", "Cinema in aer liber", "21:00", "Iulius Park", 62, 85, "film"));
@@ -520,10 +520,10 @@ oraseActivitati["Cluj"].adaugaActivitate(23, ActivitateFactory::creeazaActivitat
 
     oraseActivitati["Cluj"].adaugaActivitate(23, ActivitateFactory::creeazaActivitate(
     "cultural", "Noaptea Muzeelor la Muzeul de Istorie", "23:00", "Str. Daicoviciu", 54, 12, "muzeu",
-    "Muzeul de Istorie își deschide porțile noaptea, oferind vizite ghidate și reconstituiri istorice."));
+    "Muzeul de Istorie isi deschide portile noaptea, oferind vizite ghidate si reconstituiri istorice."));
     oraseActivitati["Cluj"].adaugaActivitate(23, ActivitateFactory::creeazaActivitate(
         "cultural", "Lectura nocturna la Biblioteca Centrala UBB", "23:00", "Str. Clinicilor", 31, 26, "literatura",
-        "Biblioteca Centrală Universitară organizează o sesiune specială de lectură la miezul nopții."));
+        "Biblioteca Centrala Universitara organizeaza o sesiune speciala de lectura la miezul noptii."));
 oraseActivitati["Cluj"].adaugaActivitate(23, ActivitateFactory::creeazaActivitate(
     "divertisment", "Clubbing la Euphoria", "23:00", "Euphoria Music Hall", 68, 73, "muzica electronica"));
 oraseActivitati["Cluj"].adaugaActivitate(23, ActivitateFactory::creeazaActivitate(
@@ -577,10 +577,13 @@ void Rulare::ruleaza() {
 
 
     if (!itinerar.validFinal()) {
-        std::cout << "\nItinerarul nu este complet echilibrat.\n";
+        std::cout << "\nItinerarul nu este complet echilibrat.\n\n";
     } else {
-        std::cout << "\nItinerarul este echilibrat si complet!\n";
+        std::cout << "\nItinerarul este echilibrat si complet!\n\n";
     }
+
+    itinerar.afiseazaSuveniruri();
+
 
     std::cout << "\n--- HARTA ACTIVITATILOR ---\n";
     itinerar.afiseazaHarta();

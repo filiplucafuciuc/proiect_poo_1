@@ -31,4 +31,6 @@ public:
 
     // const std::vector<std::shared_ptr<Activitate>>& getActivitati() const;
 
+    void afiseazaSuveniruri() const;
+
 };

@@ -5,7 +5,13 @@
 ActivitateCulturala::ActivitateCulturala(const std::string& nume, const std::string& ora,
 const std::string& locatie, int x, int y,
 const std::string& obiectiv, const std::string& funFact)
-: Activitate(nume, ora, locatie, x, y), obiectiv(obiectiv), funFact(funFact) {}
+: Activitate(nume, ora, locatie, x, y), obiectiv(obiectiv), funFact(funFact) {
+    if (obiectiv == "muzeu") suvenir = "bibelou";
+    else if (obiectiv == "literatura") suvenir = "poezie";
+    else if (obiectiv == "religios") suvenir = "cruciulita";
+    else if (obiectiv == "istoric") suvenir = "magnet";
+    else suvenir = "suvenir generic";
+}
 
 void ActivitateCulturala::afiseaza() const {
     std::cout << *this << " | Cultural - Obiectiv: " << obiectiv << "\n";

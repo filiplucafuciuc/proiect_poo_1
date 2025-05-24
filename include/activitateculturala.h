@@ -5,6 +5,7 @@ class ActivitateCulturala : public Activitate {
 private:
     std::string obiectiv;
     std::string funFact;
+    std::string suvenir;
 
 public:
     ActivitateCulturala(const std::string& nume, const std::string& ora,
@@ -16,4 +17,6 @@ public:
     const std::string& getFunFact() const;
 
     void executaActivitate(double& buget, int& energie) override;
+
+    std::string getSuvenir() const override { return suvenir; }
 };
