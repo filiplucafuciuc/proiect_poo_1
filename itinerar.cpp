@@ -85,7 +85,7 @@ double Itinerar::calculeazaDistantaTotala() const {
     return dist;
 }
 void Itinerar::afiseazaHarta() const {
-    int v[101][101] = {};  // toate sunt inițial 0
+    int v[101][101] = {};
 
     for (const auto& act : activitati) {
         int x = act->getX();
@@ -106,6 +106,51 @@ void Itinerar::afiseazaHarta() const {
 
 
 
+// void Itinerar::alegeActivitatePentruOra(
+//     int ora,
+//     const std::string& orasAles,
+//     const std::map<std::string, Oras>& oraseActivitati,
+//     const std::map<int, std::string>& tipuriActivitati,
+//     double& buget,
+//     int& energie
+// ) {
+//     std::string tip;
+//
+//     while (true) {
+//         afiseazaHungerBar(); // e deja metoda membră
+//
+//         std::cout << "Ce tip de activitate doresti la ora " << ora << "?\n";
+//         for (const auto& [index, nume] : tipuriActivitati) {
+//             std::cout << index << ". " << nume << "\n";
+//         }
+//
+//         int optiuneActivitate;
+//         std::cout << "Introdu numarul tipului de activitate: ";
+//         std::cin >> optiuneActivitate;
+//
+//         switch (optiuneActivitate) {
+//             case 1: tip = "gastronomic"; break;
+//             case 2: tip = "cultural"; break;
+//             case 3: tip = "divertisment"; break;
+//             default:
+//                 std::cout << "Optiune invalida. Incearca din nou.\n\n";
+//             continue;
+//         }
+//
+//         try {
+//             auto act = oraseActivitati.at(orasAles).alegeActivitate(ora, tip);
+//             adaugaActivitate(act);
+//
+//             act->executaActivitate(buget, energie);
+//
+//             break;
+//         } catch (const std::exception& e) {
+//             std::cout << "\nEroare: " << e.what() << "\n";
+//             std::cout << "\nTe rugam sa alegi un alt tip de activitate.\n\n";
+//         }
+//     }
+// }
+
 void Itinerar::alegeActivitatePentruOra(
     int ora,
     const std::string& orasAles,
@@ -117,7 +162,7 @@ void Itinerar::alegeActivitatePentruOra(
     std::string tip;
 
     while (true) {
-        afiseazaHungerBar(); // e deja metoda membră
+        afiseazaHungerBar();
 
         std::cout << "Ce tip de activitate doresti la ora " << ora << "?\n";
         for (const auto& [index, nume] : tipuriActivitati) {
@@ -134,22 +179,39 @@ void Itinerar::alegeActivitatePentruOra(
             case 3: tip = "divertisment"; break;
             default:
                 std::cout << "Optiune invalida. Incearca din nou.\n\n";
-            continue;
+                continue;
         }
 
         try {
-            auto act = oraseActivitati.at(orasAles).alegeActivitate(ora, tip);
+            auto activitatiDisponibile = oraseActivitati.at(orasAles).gasesteActivitati(ora, tip);
+
+            std::cout << "\nAlege o activitate de tip \"" << tip << "\" la ora " << ora << ":\n";
+            for (size_t i = 0; i < activitatiDisponibile.size(); ++i) {
+                std::cout << i + 1 << ". ";
+                activitatiDisponibile[i]->afiseaza();
+            }
+
+            int optiune;
+            std::cout << "Introdu numarul activitatii dorite (1-" << activitatiDisponibile.size() << "): ";
+            std::cin >> optiune;
+
+            if (optiune < 1 || optiune > static_cast<int>(activitatiDisponibile.size())) {
+                std::cout << "Optiune invalida. Incearca din nou.\n";
+                continue;
+            }
+
+            auto act = activitatiDisponibile[optiune - 1];
             adaugaActivitate(act);
-
             act->executaActivitate(buget, energie);
-
             break;
+
         } catch (const std::exception& e) {
             std::cout << "\nEroare: " << e.what() << "\n";
             std::cout << "\nTe rugam sa alegi un alt tip de activitate.\n\n";
         }
     }
 }
+
 
 // const std::vector<std::shared_ptr<Activitate>>& Itinerar::getActivitati() const {
 //     return activitati;
