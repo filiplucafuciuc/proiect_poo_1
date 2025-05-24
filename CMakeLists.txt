@@ -130,17 +130,22 @@ FetchContent_MakeAvailable(googletest)
 ###############################################################################
 
 # NOTE: update executable name in .github/workflows/cmake.yml:25 when changing name here
-add_executable(${MAIN_EXECUTABLE_NAME} main.cpp ${SOURCES}
-        activitategastronomica.cpp
-        activitate.cpp
-        activitatedivertisment.cpp
-        activitateculturala.cpp
-        oras.cpp
-        itinerar.cpp
-        activitatefactory.cpp
-        rulare.cpp
-        #test/example/example_test.cpp
-)
+#add_executable(${MAIN_EXECUTABLE_NAME} main.cpp ${SOURCES}
+#        activitategastronomica.cpp
+#        activitate.cpp
+#        activitatedivertisment.cpp
+#        activitateculturala.cpp
+#        oras.cpp
+#        itinerar.cpp
+#        activitatefactory.cpp
+#        rulare.cpp
+#        include/activitate.h
+#        include/activitate.h
+#        include/activitateculturala.h
+#        #test/example/example_test.cpp
+#)
+add_executable(${MAIN_EXECUTABLE_NAME} ${SOURCES}
+        src/activitate.cpp)
 
 # NOTE: Add all defined targets (e.g. executables, libraries, etc. )
 # NOTE: RUN_SANITIZERS is optional, if it's not present it will default to true
@@ -204,6 +209,8 @@ add_executable(test_oop
         ${HEADERS}
         ${TESTS}
         src/example.cpp
+        include/activitate.h
+        src/activitate.cpp
 )
 
 target_link_libraries(test_oop
