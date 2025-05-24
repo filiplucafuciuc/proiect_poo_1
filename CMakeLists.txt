@@ -139,7 +139,8 @@ add_executable(${MAIN_EXECUTABLE_NAME} main.cpp ${SOURCES}
         itinerar.cpp
         activitatefactory.cpp
         rulare.cpp
-        test/example/example_test.cpp)
+        #test/example/example_test.cpp
+)
 
 # NOTE: Add all defined targets (e.g. executables, libraries, etc. )
 # NOTE: RUN_SANITIZERS is optional, if it's not present it will default to true
@@ -186,3 +187,30 @@ endif()
 copy_files(FILES tastatura.txt COPY_TO_DESTINATION TARGET_NAME ${MAIN_EXECUTABLE_NAME})
 # copy_files(FILES tastatura.txt config.json DIRECTORY images sounds COPY_TO_DESTINATION TARGET_NAME ${MAIN_EXECUTABLE_NAME})
 # copy_files(DIRECTORY images sounds COPY_TO_DESTINATION TARGET_NAME ${MAIN_EXECUTABLE_NAME})
+
+
+
+
+
+
+
+
+
+
+
+enable_testing()
+
+add_executable(test_oop
+        ${HEADERS}
+        ${TESTS}
+        src/example.cpp
+)
+
+target_link_libraries(test_oop
+        GTest::gtest_main
+)
+
+target_include_directories(test_oop PRIVATE include src)
+
+include(GoogleTest)
+gtest_discover_tests(test_oop)
