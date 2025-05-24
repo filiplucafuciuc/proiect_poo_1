@@ -14,13 +14,13 @@ void ActivitateCulturala::afiseaza() const {
 std::string ActivitateCulturala::getTip() const {
     return "cultural";
 }
-const std::string ActivitateCulturala::getFunFact() const {
+const std::string& ActivitateCulturala::getFunFact() const {
     return funFact;
 }
 
 void ActivitateCulturala::executaActivitate(double& buget, int& energie) {
     std::cout << "\nActivitate Culturala: " << obiectiv << "\n\n";
-    std::cout << "Stiati ca: " << funFact << "\n\n";
+    std::cout << "Stiati ca: " << getFunFact() << "\n\n";
     std::cout << "Alege modul de vizitare pentru aceasta experienta culturala:\n";
 
     struct OptiuneVizitare {

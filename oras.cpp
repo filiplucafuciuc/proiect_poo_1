@@ -44,9 +44,9 @@ std::shared_ptr<Activitate> Oras::alegeActivitate(int ora, const std::string& ti
 }
 
 
-const std::string& Oras::getNume() const {
-    return nume;
-}
+// const std::string& Oras::getNume() const {
+//     return nume;
+// }
 
 std::ostream& operator<<(std::ostream& os, const Oras& o) {
     os << "Oras: " << o.nume << "\n";

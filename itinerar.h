@@ -29,6 +29,6 @@ public:
         int& energie
     );
 
-    const std::vector<std::shared_ptr<Activitate>>& getActivitati() const;
+    // const std::vector<std::shared_ptr<Activitate>>& getActivitati() const;
 
 };

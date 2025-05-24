@@ -151,6 +151,6 @@ void Itinerar::alegeActivitatePentruOra(
     }
 }
 
-const std::vector<std::shared_ptr<Activitate>>& Itinerar::getActivitati() const {
-    return activitati;
-}
+// const std::vector<std::shared_ptr<Activitate>>& Itinerar::getActivitati() const {
+//     return activitati;
+// }

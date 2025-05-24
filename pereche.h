@@ -12,8 +12,8 @@ public:
     Pereche(const T1& first, const T2& second);
     T1 getFirst() const;
     T2 getSecond() const;
-    void setFirst(const T1& val);
-    void setSecond(const T2& val);
+    // void setFirst(const T1& val);
+    // void setSecond(const T2& val);
     friend std::ostream& operator<<(std::ostream& os, const Pereche& p) {
         os << "(" << p.x << ", " << p.y << ")";
         return os;
