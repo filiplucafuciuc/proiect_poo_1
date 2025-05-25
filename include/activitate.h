@@ -26,11 +26,6 @@ public:
     int getX() const;
     int getY() const;
 
-    //double getCost() const;
-    //int getEnergie() const;
-    //void setCost(double c);
-    //void setEnergie(int e);
-
     virtual void executaActivitate(double& buget, int& energieCurenta) = 0;
     virtual void afiseaza() const = 0;
     virtual std::string getTip() const = 0;

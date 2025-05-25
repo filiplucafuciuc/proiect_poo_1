@@ -544,9 +544,7 @@ void Rulare::ruleaza() {
 
     while (true) {
         std::cout << "Alege un oras:\n";
-        // for (const auto& [index, nume] : orase) {
-        //     std::cout << index << ". " << nume << "\n";
-        // }
+
         for (size_t i = 0; i < oraseDisponibile.size(); ++i) {
             std::cout << i + 1 << ". " << oraseDisponibile[i] << "\n";
         }
@@ -556,7 +554,6 @@ void Rulare::ruleaza() {
         int optiune;
         if (!(std::cin >> optiune)) {
             std::cin.clear();
-            // std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
             std::string dummy;
             std::getline(std::cin, dummy);
 
@@ -564,10 +561,7 @@ void Rulare::ruleaza() {
             continue;
         }
 
-        // if (orase.count(optiune)) {
-        //     orasAles = orase[optiune];
-        //     break;
-        // }
+
         if (optiune >= 1 && optiune <= (int)oraseDisponibile.size()) {
             orasAles = oraseDisponibile[optiune - 1];
             break;
@@ -587,7 +581,6 @@ void Rulare::ruleaza() {
     std::cin >> buget;
 
     for (int ora : ore) {
-        // itinerar.alegeActivitatePentruOra(ora, orasAles, oraseActivitati, tipuriActivitati);
         itinerar.alegeActivitatePentruOra(ora, orasAles, oraseActivitati, tipuriActivitati, buget, energie);
 
     }

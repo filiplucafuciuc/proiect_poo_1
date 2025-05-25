@@ -45,11 +45,6 @@ void ActivitateGastronomica::executaActivitate(double& buget, int& energieCurent
         if (buget < costAles) {
             std::cout << "Nu ai suficienti bani pentru acest meniu.\n";
 
-            // if (buget < costuri[0]) {
-            //     std::cout << "Nu ai bani nici pentru meniul economic. Te intorci la meniul principal.\n";
-            //     return;
-            // }
-
             std::cout << "Te rog sa alegi o alta optiune.\n";
             continue;
         }
