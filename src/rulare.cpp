@@ -582,7 +582,6 @@ void Rulare::ruleaza() {
 
     for (int ora : ore) {
         itinerar.alegeActivitatePentruOra(ora, orasAles, oraseActivitati, tipuriActivitati, buget, energie);
-
     }
 
     itinerar.ordoneazaDupaOra();
