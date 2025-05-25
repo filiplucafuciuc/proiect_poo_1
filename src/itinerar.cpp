@@ -160,8 +160,7 @@ void Itinerar::alegeActivitatePentruOra(
     double& buget,
     int& energie
 ) {
-    std::string tip;
-
+    // std::string tip;
     // while (true) {
     //     afiseazaHungerBar();
     //
