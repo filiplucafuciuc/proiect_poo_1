@@ -174,17 +174,57 @@ void Itinerar::alegeActivitatePentruOra(
         std::cout << "Introdu numarul tipului de activitate: ";
         std::cin >> optiuneActivitate;
 
-        switch (optiuneActivitate) {
-            case 1: tip = "gastronomic"; break;
-            case 2: tip = "cultural"; break;
-            case 3: tip = "divertisment"; break;
-            default:
-                std::cout << "Optiune invalida. Incearca din nou.\n\n";
-                continue;
-        }
+        // switch (optiuneActivitate) {
+        //     case 1: tip = "gastronomic"; break;
+        //     case 2: tip = "cultural"; break;
+        //     case 3: tip = "divertisment"; break;
+        //     default:
+        //         std::cout << "Optiune invalida. Incearca din nou.\n\n";
+        //         continue;
+        // }
+        //
+        // try {
+        //     auto activitatiDisponibile = oraseActivitati.at(orasAles).gasesteActivitati(ora, tip);
+        //
+        //     std::cout << "\nAlege o activitate de tip \"" << tip << "\" la ora " << ora << ":\n";
+        //     for (size_t i = 0; i < activitatiDisponibile.size(); ++i) {
+        //         std::cout << i + 1 << ". ";
+        //         activitatiDisponibile[i]->afiseaza();
+        //     }
+        //
+        //     int optiune;
+        //     std::cout << "Introdu numarul activitatii dorite (1-" << activitatiDisponibile.size() << "): ";
+        //     std::cin >> optiune;
+        //
+        //     if (optiune < 1 || optiune > static_cast<int>(activitatiDisponibile.size())) {
+        //         std::cout << "Optiune invalida. Incearca din nou.\n";
+        //         continue;
+        //     }
+        //
+        //     auto act = activitatiDisponibile[optiune - 1];
+        //     adaugaActivitate(act);
+        //     act->executaActivitate(buget, energie);
+        //     break;
+        //
+        // } catch (const std::exception& e) {
+        //     std::cout << "\nEroare: " << e.what() << "\n";
+        //     std::cout << "\nTe rugam sa alegi un alt tip de activitate.\n\n";
+        // }
 
         try {
+            switch (optiuneActivitate) {
+                case 1: tip = "gastronomic"; break;
+                case 2: tip = "cultural"; break;
+                case 3: tip = "divertisment"; break;
+                default:
+                    throw std::runtime_error("Optiune invalida. Trebuie sa alegi un tip de activitate existent!");
+            }
+
             auto activitatiDisponibile = oraseActivitati.at(orasAles).gasesteActivitati(ora, tip);
+
+            if (activitatiDisponibile.empty()) {
+                throw std::runtime_error("Nu exista activitati de tip \"" + tip + "\" la ora " + std::to_string(ora) + ".");
+            }
 
             std::cout << "\nAlege o activitate de tip \"" << tip << "\" la ora " << ora << ":\n";
             for (size_t i = 0; i < activitatiDisponibile.size(); ++i) {
@@ -196,20 +236,27 @@ void Itinerar::alegeActivitatePentruOra(
             std::cout << "Introdu numarul activitatii dorite (1-" << activitatiDisponibile.size() << "): ";
             std::cin >> optiune;
 
+            if (std::cin.fail()) {
+                std::cin.clear();
+                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+                throw std::runtime_error("Input invalid! Trebuie sa introduci un numar.");
+            }
+
             if (optiune < 1 || optiune > static_cast<int>(activitatiDisponibile.size())) {
-                std::cout << "Optiune invalida. Incearca din nou.\n";
-                continue;
+                throw std::runtime_error("Optiune invalida! Trebuie sa alegi un numar intre 1 si " + std::to_string(activitatiDisponibile.size()));
             }
 
             auto act = activitatiDisponibile[optiune - 1];
             adaugaActivitate(act);
             act->executaActivitate(buget, energie);
+            std::cout << "Activitatea a fost adaugata cu succes!\n\n";
             break;
 
         } catch (const std::exception& e) {
-            std::cout << "\nEroare: " << e.what() << "\n";
-            std::cout << "\nTe rugam sa alegi un alt tip de activitate.\n\n";
+            std::cout << "\nEroare: " << e.what() << "\n\n";
+            std::cout << "Te rugam sa alegi un alt tip de activitate.\n\n";
         }
+
     }
 }
 
