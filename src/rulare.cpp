@@ -573,6 +573,8 @@ void Rulare::ruleaza() {
 
     }
 
+    itinerar.ordoneazaDupaOra();
+
     itinerar.afiseaza();
 
 

@@ -22,6 +22,14 @@ Activitate& Activitate::operator=(const Activitate& other) {
     return *this;
 }
 
+bool Activitate::operator==(const Activitate& other) const {
+    return nume == other.nume && ora == other.ora && locatie == other.locatie;
+}
+bool operator<(const Activitate& a, const Activitate& b) {
+    return a.getOra() < b.getOra();
+}
+
+
 Activitate::~Activitate() = default;
 
 int Activitate::getNrActivitati() {
@@ -35,6 +43,10 @@ int Activitate::getY() const { return coordonate.getSecond(); }
 // int Activitate::getEnergie() const { return energie; }
 // void Activitate::setCost(double c) { cost = c; }
 // void Activitate::setEnergie(int e) { energie = e; }
+
+const std::string& Activitate::getOra() const {
+    return ora;
+}
 
 std::ostream& operator<<(std::ostream& os, const Activitate& act) {
     os << "[" << act.ora << "] " << act.nume << " la " << act.locatie << " " << act.coordonate;

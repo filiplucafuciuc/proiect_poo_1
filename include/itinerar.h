@@ -33,4 +33,5 @@ public:
 
     void afiseazaSuveniruri() const;
 
+    void ordoneazaDupaOra();
 };

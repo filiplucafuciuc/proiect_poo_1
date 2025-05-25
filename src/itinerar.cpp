@@ -6,6 +6,7 @@
 #include "oras.h"
 #include <map>
 #include <string>
+#include <algorithm>
 
 
 void Itinerar::adaugaActivitate(std::shared_ptr<Activitate> act) {
@@ -224,4 +225,9 @@ void Itinerar::afiseazaSuveniruri() const {
             std::cout << "- " << act->getSuvenir() << " de la activitatea \"" << act->getNume() << "\"\n";
         }
     }
+}
+void Itinerar::ordoneazaDupaOra() {
+    std::sort(activitati.begin(), activitati.end(), [](const std::shared_ptr<Activitate>& a, const std::shared_ptr<Activitate>& b) {
+        return *a < *b;
+    });
 }

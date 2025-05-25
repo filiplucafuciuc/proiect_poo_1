@@ -35,11 +35,20 @@ public:
     virtual void afiseaza() const = 0;
     virtual std::string getTip() const = 0;
 
+    const std::string& getOra() const;
+
     friend std::ostream& operator<<(std::ostream& os, const Activitate& act);
+
+    bool operator==(const Activitate& other) const;
+
+
+
+
 
     virtual std::string getSuvenir() const { return ""; }
     virtual std::string getNume() const { return nume; }
 };
 
+bool operator<(const Activitate& a, const Activitate& b);
 
 // #endif
