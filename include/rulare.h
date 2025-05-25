@@ -12,13 +12,9 @@
 
 class Rulare {
 private:
-    Itinerar itinerar;
+    Itinerar& itinerar = Itinerar::singleton();
 
-    std::map<int, std::string> orase = {
-        {1, "Bucuresti"},
-        {2, "Iasi"},
-        {3, "Cluj"}
-    };
+    static std::vector<std::string> oraseDisponibile;
 
     std::map<std::string, Oras> oraseActivitati = {
         {"Bucuresti", Oras("Bucuresti")},

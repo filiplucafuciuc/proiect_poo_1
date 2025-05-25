@@ -12,7 +12,13 @@ class Itinerar {
     std::map<std::string, int> frecventaPeTip;
     const int MIN_TIP = 2;
     const int MAX_TIP = 5;
+
+    Itinerar() = default;
+    Itinerar(const Itinerar&) = delete;
+    Itinerar& operator=(const Itinerar&) = delete;
 public:
+    static Itinerar& singleton();
+
     void adaugaActivitate(std::shared_ptr<Activitate> act);
     void afiseaza() const;
     bool validFinal() const;

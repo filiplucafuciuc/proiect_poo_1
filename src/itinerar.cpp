@@ -8,6 +8,10 @@
 #include <string>
 #include <algorithm>
 
+Itinerar& Itinerar::singleton() {
+    static Itinerar instance;
+    return instance;
+}
 
 void Itinerar::adaugaActivitate(std::shared_ptr<Activitate> act) {
     // activitati.push_back(act);

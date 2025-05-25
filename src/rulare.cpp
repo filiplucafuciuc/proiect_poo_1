@@ -1,10 +1,12 @@
 #include "rulare.h"
 
+std::vector<std::string> Rulare::oraseDisponibile = {"Bucuresti", "Iasi", "Cluj"};
+
 void Rulare::incarcaActivitati() {
     oraseActivitati["Iasi"].adaugaActivitate(8, ActivitateFactory::creeazaActivitate(
-    "gastronomic", "Mic dejun traditional", "8:00", "Restaurant Oscar", 12, 45, "romaneasca"));
+    "gastronomic", "Mic dejun traditional", "08:00", "Restaurant Oscar", 12, 45, "romaneasca"));
 oraseActivitati["Iasi"].adaugaActivitate(8, ActivitateFactory::creeazaActivitate(
-    "gastronomic", "Cafea de dimineata", "8:00", "Fika", 3, 88, "scandinava"));
+    "gastronomic", "Cafea de dimineata", "08:00", "Fika", 3, 88, "scandinava"));
 
     oraseActivitati["Iasi"].adaugaActivitate(8, ActivitateFactory::creeazaActivitate(
     "cultural", "Vizita la Palatul Culturii", "08:00", "Palatul Culturii", 55, 20, "muzeu",
@@ -14,15 +16,15 @@ oraseActivitati["Iasi"].adaugaActivitate(8, ActivitateFactory::creeazaActivitate
         "Parcul Copou gazduieste Teiul lui Eminescu, vechi de peste 500 de ani."));
 
 oraseActivitati["Iasi"].adaugaActivitate(8, ActivitateFactory::creeazaActivitate(
-    "divertisment", "Jogging de dimineata", "8:00", "Stadionul Emil Alexandrescu", 64, 7, "sport"));
+    "divertisment", "Jogging de dimineata", "08:00", "Stadionul Emil Alexandrescu", 64, 7, "sport"));
 oraseActivitati["Iasi"].adaugaActivitate(8, ActivitateFactory::creeazaActivitate(
-    "divertisment", "Joaca in Escape Room", "8:00", "LockedIn Iasi", 28, 60, "aventura"));
+    "divertisment", "Joaca in Escape Room", "08:00", "LockedIn Iasi", 28, 60, "aventura"));
 
 
 oraseActivitati["Iasi"].adaugaActivitate(9, ActivitateFactory::creeazaActivitate(
-    "gastronomic", "Briose si ceai", "9:00", "Montmartre", 0, 0, "britanica"));
+    "gastronomic", "Briose si ceai", "09:00", "Montmartre", 0, 0, "britanica"));
 oraseActivitati["Iasi"].adaugaActivitate(9, ActivitateFactory::creeazaActivitate(
-    "gastronomic", "Croissante si espresso", "9:00", "Cuib", 10, 10, "franceza"));
+    "gastronomic", "Croissante si espresso", "09:00", "Cuib", 10, 10, "franceza"));
 
     oraseActivitati["Iasi"].adaugaActivitate(9, ActivitateFactory::creeazaActivitate(
     "cultural", "Vizita la Mitropolia Moldovei", "09:00", "Mitropolia Moldovei si Bucovinei", 89, 4, "religios",
@@ -32,9 +34,9 @@ oraseActivitati["Iasi"].adaugaActivitate(9, ActivitateFactory::creeazaActivitate
         "Libraria Junimea este un punct cultural activ inca din perioada interbelica."));
 
 oraseActivitati["Iasi"].adaugaActivitate(9, ActivitateFactory::creeazaActivitate(
-    "divertisment", "Cinematograf matinal", "9:00", "Cinema Victoria", 50, 50, "film"));
+    "divertisment", "Cinematograf matinal", "09:00", "Cinema Victoria", 50, 50, "film"));
 oraseActivitati["Iasi"].adaugaActivitate(9, ActivitateFactory::creeazaActivitate(
-    "divertisment", "Trambulina si distractie", "9:00", "Salto Parc", 22, 38, "activitate fizica"));
+    "divertisment", "Trambulina si distractie", "09:00", "Salto Parc", 22, 38, "activitate fizica"));
 
 
 oraseActivitati["Iasi"].adaugaActivitate(11, ActivitateFactory::creeazaActivitate(
@@ -186,9 +188,9 @@ oraseActivitati["Iasi"].adaugaActivitate(23, ActivitateFactory::creeazaActivitat
 
 
 oraseActivitati["Bucuresti"].adaugaActivitate(8, ActivitateFactory::creeazaActivitate(
-    "gastronomic", "Mic dejun la French Bakery", "8:00", "French Bakery", 10, 20, "frantuzeasca"));
+    "gastronomic", "Mic dejun la French Bakery", "08:00", "French Bakery", 10, 20, "frantuzeasca"));
 oraseActivitati["Bucuresti"].adaugaActivitate(8, ActivitateFactory::creeazaActivitate(
-    "gastronomic", "Cafea la Origo", "8:00", "Origo", 15, 25, "specialty coffee"));
+    "gastronomic", "Cafea la Origo", "08:00", "Origo", 15, 25, "specialty coffee"));
 
 oraseActivitati["Bucuresti"].adaugaActivitate(8, ActivitateFactory::creeazaActivitate(
     "cultural", "Vizita la Muzeul National de Arta", "08:00", "Calea Victoriei 49-53", 55, 28, "muzeu",
@@ -198,14 +200,14 @@ oraseActivitati["Bucuresti"].adaugaActivitate(8, ActivitateFactory::creeazaActiv
     "Un ghid specializat le prezinta turistilor cladirile vechi si povestile Bucurestiului de odinioara."));
 
 oraseActivitati["Bucuresti"].adaugaActivitate(8, ActivitateFactory::creeazaActivitate(
-    "divertisment", "Jogging in Parcul Herastrau", "8:00", "Parcul Herastrau", 30, 40, "sport"));
+    "divertisment", "Jogging in Parcul Herastrau", "08:00", "Parcul Herastrau", 30, 40, "sport"));
 oraseActivitati["Bucuresti"].adaugaActivitate(8, ActivitateFactory::creeazaActivitate(
-    "divertisment", "Yoga in Parcul Tineretului", "8:00", "Parcul Tineretului", 35, 45, "wellness"));
+    "divertisment", "Yoga in Parcul Tineretului", "08:00", "Parcul Tineretului", 35, 45, "wellness"));
 
 oraseActivitati["Bucuresti"].adaugaActivitate(9, ActivitateFactory::creeazaActivitate(
-    "gastronomic", "Brunch la Simbio", "9:00", "Simbio", 12, 42, "moderna"));
+    "gastronomic", "Brunch la Simbio", "09:00", "Simbio", 12, 42, "moderna"));
 oraseActivitati["Bucuresti"].adaugaActivitate(9, ActivitateFactory::creeazaActivitate(
-    "gastronomic", "Mic dejun traditional la Lacrimi si Sfinti", "9:00", "Lacrimi si Sfinti", 14, 38, "romaneasca"));
+    "gastronomic", "Mic dejun traditional la Lacrimi si Sfinti", "09:00", "Lacrimi si Sfinti", 14, 38, "romaneasca"));
 
 oraseActivitati["Bucuresti"].adaugaActivitate(9, ActivitateFactory::creeazaActivitate(
     "cultural", "Vizita la Patriarhia Romana", "09:00", "Dealul Mitropoliei", 64, 33, "religios",
@@ -215,9 +217,9 @@ oraseActivitati["Bucuresti"].adaugaActivitate(9, ActivitateFactory::creeazaActiv
     "Libraria Carturesti gazduieste sesiuni matinale de lectura pentru pasionatii de literatura."));
 
 oraseActivitati["Bucuresti"].adaugaActivitate(9, ActivitateFactory::creeazaActivitate(
-    "divertisment", "Escape Room – Trapped", "9:00", "Trapped Escape Room", 21, 49, "aventura"));
+    "divertisment", "Escape Room – Trapped", "09:00", "Trapped Escape Room", 21, 49, "aventura"));
 oraseActivitati["Bucuresti"].adaugaActivitate(9, ActivitateFactory::creeazaActivitate(
-    "divertisment", "Bowling la Mega Mall", "9:00", "Mega Mall", 23, 50, "recreatie"));
+    "divertisment", "Bowling la Mega Mall", "09:00", "Mega Mall", 23, 50, "recreatie"));
 
 oraseActivitati["Bucuresti"].adaugaActivitate(11, ActivitateFactory::creeazaActivitate(
     "gastronomic", "Pranz la Caru' cu Bere", "11:00", "Caru' cu Bere", 26, 51, "romaneasca"));
@@ -361,9 +363,9 @@ oraseActivitati["Bucuresti"].adaugaActivitate(23, ActivitateFactory::creeazaActi
 
 
 oraseActivitati["Cluj"].adaugaActivitate(8, ActivitateFactory::creeazaActivitate(
-    "gastronomic", "Mic dejun la Eggcetera", "8:00", "Eggcetera", 10, 10, "brunch"));
+    "gastronomic", "Mic dejun la Eggcetera", "08:00", "Eggcetera", 10, 10, "brunch"));
 oraseActivitati["Cluj"].adaugaActivitate(8, ActivitateFactory::creeazaActivitate(
-    "gastronomic", "Cafea la Olivo", "8:00", "Olivo Caffe", 11, 12, "cafenea"));
+    "gastronomic", "Cafea la Olivo", "08:00", "Olivo Caffe", 11, 12, "cafenea"));
 
 oraseActivitati["Cluj"].adaugaActivitate(8, ActivitateFactory::creeazaActivitate(
     "cultural", "Vizita la Muzeul de Arta Cluj", "08:00", "Piata Unirii nr. 30", 74, 18, "muzeu",
@@ -373,14 +375,14 @@ oraseActivitati["Cluj"].adaugaActivitate(8, ActivitateFactory::creeazaActivitate
     "Bastionul Croitorilor face parte din fosta cetate medievala a Clujului si a fost restaurat pentru vizitatori."));
 
 oraseActivitati["Cluj"].adaugaActivitate(8, ActivitateFactory::creeazaActivitate(
-    "divertisment", "Jogging in Parcul Central", "8:00", "Parcul Central", 14, 18, "outdoor"));
+    "divertisment", "Jogging in Parcul Central", "08:00", "Parcul Central", 14, 18, "outdoor"));
 oraseActivitati["Cluj"].adaugaActivitate(8, ActivitateFactory::creeazaActivitate(
-    "divertisment", "Joaca la Board Games Hub", "8:00", "Leon's Board Games", 15, 20, "board games"));
+    "divertisment", "Joaca la Board Games Hub", "08:00", "Leon's Board Games", 15, 20, "board games"));
 
 oraseActivitati["Cluj"].adaugaActivitate(9, ActivitateFactory::creeazaActivitate(
-    "gastronomic", "Briose la Meron", "9:00", "Meron Central", 16, 22, "patiserie"));
+    "gastronomic", "Briose la Meron", "09:00", "Meron Central", 16, 22, "patiserie"));
 oraseActivitati["Cluj"].adaugaActivitate(9, ActivitateFactory::creeazaActivitate(
-    "gastronomic", "Mic dejun la Nuka Bistro", "9:00", "Nuka Bistro", 17, 24, "fusion"));
+    "gastronomic", "Mic dejun la Nuka Bistro", "09:00", "Nuka Bistro", 17, 24, "fusion"));
 
 oraseActivitati["Cluj"].adaugaActivitate(9, ActivitateFactory::creeazaActivitate(
     "cultural", "Lectura matinala la Book Corner", "09:00", "Bd. Eroilor", 43, 20, "literatura",
@@ -390,9 +392,9 @@ oraseActivitati["Cluj"].adaugaActivitate(9, ActivitateFactory::creeazaActivitate
     "Catedrala Mitropolitana din Cluj a fost construita in anii '30 si impresioneaza prin arhitectura sa monumentala."));
 
 oraseActivitati["Cluj"].adaugaActivitate(9, ActivitateFactory::creeazaActivitate(
-    "divertisment", "Escape Room – The Dungeon", "9:00", "The Dungeon", 20, 30, "aventura"));
+    "divertisment", "Escape Room – The Dungeon", "09:00", "The Dungeon", 20, 30, "aventura"));
 oraseActivitati["Cluj"].adaugaActivitate(9, ActivitateFactory::creeazaActivitate(
-    "divertisment", "Cinema Victoria", "9:00", "Cinema Victoria", 21, 32, "film"));
+    "divertisment", "Cinema Victoria", "09:00", "Cinema Victoria", 21, 32, "film"));
 
 oraseActivitati["Cluj"].adaugaActivitate(11, ActivitateFactory::creeazaActivitate(
     "gastronomic", "Smoothie la Sisters", "11:00", "Sisters Cafe", 22, 34, "sanatos"));
@@ -539,32 +541,14 @@ void Rulare::ruleaza() {
 
     std::string orasAles;
 
-    // while (true) {
-    //     std::cout << "Alege un oras:\n";
-    //     for (const auto& [index, nume] : orase) {
-    //         std::cout << index << ". " << nume << "\n";
-    //     }
-    //
-    //     try {
-    //         std::cout << "Introdu numarul orasului: ";
-    //         int optiune;
-    //         std::cin >> optiune;
-    //
-    //         if (orase.count(optiune)) {
-    //             orasAles = orase[optiune];
-    //             break;
-    //         } else {
-    //             throw std::runtime_error("Optiune invalida! Trebuie sa alegi un numar valid.");
-    //         }
-    //     } catch (const std::exception& e) {
-    //         std::cout << "Eroare: " << e.what() << "\n";
-    //     }
-    // }
 
     while (true) {
         std::cout << "Alege un oras:\n";
-        for (const auto& [index, nume] : orase) {
-            std::cout << index << ". " << nume << "\n";
+        // for (const auto& [index, nume] : orase) {
+        //     std::cout << index << ". " << nume << "\n";
+        // }
+        for (size_t i = 0; i < oraseDisponibile.size(); ++i) {
+            std::cout << i + 1 << ". " << oraseDisponibile[i] << "\n";
         }
 
         std::cout << "Introdu numarul orasului: ";
@@ -580,10 +564,16 @@ void Rulare::ruleaza() {
             continue;
         }
 
-        if (orase.count(optiune)) {
-            orasAles = orase[optiune];
+        // if (orase.count(optiune)) {
+        //     orasAles = orase[optiune];
+        //     break;
+        // }
+        if (optiune >= 1 && optiune <= (int)oraseDisponibile.size()) {
+            orasAles = oraseDisponibile[optiune - 1];
             break;
-        } else {
+        }
+
+        else {
             std::cout << "Optiune invalida! Trebuie sa alegi un numar valid.\n\n";
         }
     }
