@@ -572,7 +572,10 @@ void Rulare::ruleaza() {
         int optiune;
         if (!(std::cin >> optiune)) {
             std::cin.clear();
-            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            // std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            std::string dummy;
+            std::getline(std::cin, dummy);
+
             std::cout << "Input invalid! Trebuie sa introduci un numar.\n\n";
             continue;
         }
