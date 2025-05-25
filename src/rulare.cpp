@@ -537,8 +537,29 @@ void Rulare::ruleaza() {
 
     std::cout << "Poti alege dintre: " << Activitate::getNrActivitati() << " activitati!\n";
 
-    int optiune;
     std::string orasAles;
+
+    // while (true) {
+    //     std::cout << "Alege un oras:\n";
+    //     for (const auto& [index, nume] : orase) {
+    //         std::cout << index << ". " << nume << "\n";
+    //     }
+    //
+    //     try {
+    //         std::cout << "Introdu numarul orasului: ";
+    //         int optiune;
+    //         std::cin >> optiune;
+    //
+    //         if (orase.count(optiune)) {
+    //             orasAles = orase[optiune];
+    //             break;
+    //         } else {
+    //             throw std::runtime_error("Optiune invalida! Trebuie sa alegi un numar valid.");
+    //         }
+    //     } catch (const std::exception& e) {
+    //         std::cout << "Eroare: " << e.what() << "\n";
+    //     }
+    // }
 
     while (true) {
         std::cout << "Alege un oras:\n";
@@ -546,20 +567,25 @@ void Rulare::ruleaza() {
             std::cout << index << ". " << nume << "\n";
         }
 
-        try {
-            std::cout << "Introdu numarul orasului: ";
-            std::cin >> optiune;
+        std::cout << "Introdu numarul orasului: ";
 
-            if (orase.count(optiune)) {
-                orasAles = orase[optiune];
-                break;
-            } else {
-                throw std::runtime_error("Optiune invalida! Trebuie sa alegi un numar valid.");
-            }
-        } catch (const std::exception& e) {
-            std::cout << "Eroare: " << e.what() << "\n";
+        int optiune;
+        if (!(std::cin >> optiune)) {
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            std::cout << "Input invalid! Trebuie sa introduci un numar.\n\n";
+            continue;
+        }
+
+        if (orase.count(optiune)) {
+            orasAles = orase[optiune];
+            break;
+        } else {
+            std::cout << "Optiune invalida! Trebuie sa alegi un numar valid.\n\n";
         }
     }
+
+
 
     double buget;
     int energie = 100;
