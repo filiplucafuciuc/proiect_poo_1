@@ -604,7 +604,7 @@ void Rulare::ruleaza() {
     double buget;
     int energie = 100;
 
-    std::cout << "Introdu bugetul tau initial (se recomanda minim 150): ";
+    std::cout << "Introdu bugetul tau initial (se recomanda minim 350): ";
     std::cin >> buget;
 
     for (int ora : ore) {

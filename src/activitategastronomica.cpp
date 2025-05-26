@@ -27,14 +27,9 @@ void ActivitateGastronomica::executaActivitate(double& buget, int& energieCurent
 
     while (true) {
         std::cout << "\nSelecteaza un meniu:\n";
-        // std::cout << "1. Meniu economic (10 lei, +5 energie)\n";
-        // std::cout << "2. Meniu standard (25 lei, +15 energie)\n";
-        // std::cout << "3. Meniu gourmet (50 lei, +30 energie)\n";
         std::cout << "\nSelecteaza un meniu:\n";
         for (int i = 0; i < nrOptiuni; ++i) {
             std::cout << (i + 1) << ". " << meniu[i].first << " (" << costuri[i] << " lei, +" << energii[i] << " energie)";
-            // if (!meniu[i].second.empty())
-            //     std::cout << " [" << meniu[i].second << "]";
             std::cout << "\n";
         }
         std::cout << "Alegerea ta: ";
