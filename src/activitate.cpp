@@ -48,3 +48,4 @@ std::ostream& operator<<(std::ostream& os, const Activitate& act) {
     return os;
 }
 
+

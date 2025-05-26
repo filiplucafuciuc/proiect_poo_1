@@ -75,3 +75,4 @@ void ActivitateCulturala::executaActivitate(double& buget, int& energieCurenta) 
         }
     }
 }
+

@@ -25,9 +25,9 @@ void ActivitateDivertisment::executaActivitate(double& buget, int& energieCurent
     };
 
     std::vector<OptiuneDivertisment> optiuni = {
-        {"Relaxat (doar privesti sau participi pasiv)", 20.0, -5},
-        {"Normal (te implici moderat)", 35.0, -15},
-        {"Intens (experienta activa, competitiva)", 50.0, -30}
+        {"Relaxat (participi pasiv)", 20.0, -15},
+        {"Normal (te implici moderat)", 35.0, -25},
+        {"Intens (experienta activa, competitiva)", 50.0, -40}
     };
 
     for (size_t i = 0; i < optiuni.size(); ++i) {
@@ -92,8 +92,13 @@ void ActivitateDivertisment::executaActivitate(double& buget, int& energieCurent
     if (factorReducere < 0.0) factorReducere = 0.0;
     int energieConsumata = static_cast<int>(optAleasa.modificareEnergie * factorReducere);
     energieCurenta += energieConsumata;
+    if (energieCurenta < 0) {
+        energieCurenta = 0;
+        std::cout<< "Nivel critic de energie!\n";
+    }
 
     std::cout << "Ai participat la activitatea \"" << tipDivertisment << "\" - "
               << optAleasa.descriere << ".\n";
     std::cout << "Buget ramas: " << buget << " lei | Energie actuala: " << energieCurenta << "\n";
 }
+

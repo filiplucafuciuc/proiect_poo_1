@@ -135,7 +135,8 @@ FetchContent_MakeAvailable(googletest)
 #
 #)
 add_executable(${MAIN_EXECUTABLE_NAME} ${SOURCES}
-        src/activitate.cpp)
+        src/activitate.cpp
+)
 
 # NOTE: Add all defined targets (e.g. executables, libraries, etc. )
 # NOTE: RUN_SANITIZERS is optional, if it's not present it will default to true
@@ -211,3 +212,4 @@ target_include_directories(test_oop PRIVATE include src)
 
 include(GoogleTest)
 gtest_discover_tests(test_oop)
+

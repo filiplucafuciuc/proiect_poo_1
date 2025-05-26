@@ -1,5 +1,7 @@
 #pragma once
 #include <memory>
+#include <string>
+#include <vector>
 #include "activitategastronomica.h"
 #include "activitateculturala.h"
 #include "activitatedivertisment.h"
@@ -13,7 +15,9 @@ public:
     const std::string& locatie,
     int x, int y,
     const std::string& subtip = "",
+    const std::vector<std::pair<std::string, std::string>>& meniu = {},
     const std::string& funFact = ""
 );
 
 };
+

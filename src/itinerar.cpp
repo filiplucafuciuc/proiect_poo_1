@@ -111,6 +111,11 @@ void Itinerar::alegeActivitatePentruOra(
 
     while (true) {
     afiseazaHungerBar();
+        if(energie<30) {
+            std::cout << "\nEnergie scazuta! ("<< energie << "/100)\n";
+            std::cout << "Iti recomandam sa alegi o activitate de tip gastronomic!\n";
+        }
+
 
     std::cout << "Ce tip de activitate doresti la ora " << ora << "?\n";
     for (const auto& [index, nume] : tipuriActivitati) {
@@ -192,3 +197,4 @@ void Itinerar::ordoneazaDupaOra() {
         return *a < *b;
     });
 }
+

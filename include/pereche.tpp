@@ -10,3 +10,4 @@ T1 Pereche<T1, T2>::getFirst() const { return x; }
 template <typename T1, typename T2>
 T2 Pereche<T1, T2>::getSecond() const { return y; }
 
+
